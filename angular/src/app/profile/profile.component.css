@@ -1,0 +1,102 @@
+.profile {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título */
+.profile h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #f68b1e;
+  font-weight: 700;
+}
+
+/* Mensaje de error */
+.error {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  color: #842029;
+  background: #f8d7da;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Datos del usuario */
+.profile p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Subtítulos */
+.profile h3 {
+  font-size: 1.4rem;
+  color: #f68b1e;
+  margin: 24px 0 12px;
+  font-weight: 600;
+}
+
+/* Botón */
+.profile-button {
+  padding: 10px 16px;
+  background-color: #f68b1e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.profile-button:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+/* Historial de pedidos */
+.profile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.profile li img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.profile li div {
+  flex: 1;
+}
+
+.profile li p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Paginación */
+app-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}

@@ -1,0 +1,83 @@
+.address {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Título */
+.address h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #f68b1e;
+  font-weight: 700;
+}
+
+/* Mensaje de error general */
+.error {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  color: #842029;
+  background: #f8d7da;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Grupos de formulario */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Labels modernos */
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fafafa;
+  color: #000;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #f68b1e;
+  box-shadow: 0 0 6px rgba(246,139,30,0.3);
+}
+
+/* Botón */
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background-color: #f68b1e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}

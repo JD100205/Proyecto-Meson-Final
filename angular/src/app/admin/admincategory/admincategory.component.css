@@ -1,0 +1,74 @@
+* {
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal */
+.admin {
+  padding: 24px;
+  width: 60%;
+  margin: 40px auto 8rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Título */
+.admin h2 {
+  font-size: 30px;
+  margin: 0 0 24px;
+  text-align: center;
+  color: #f68b1e;
+  font-weight: 700;
+}
+
+/* Botones generales */
+.admin button {
+  padding: 10px 18px;
+  background-color: #f68b1e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.admin button:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+/* Botón eliminar */
+.admin .delete {
+  background-color: #e63946;
+}
+
+.admin .delete:hover {
+  background-color: #c1121f;
+}
+
+/* Lista */
+.admin ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ítems */
+.admin li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Nombre de categoría */
+.admin li span {
+  font-weight: 500;
+  color: #333;
+}

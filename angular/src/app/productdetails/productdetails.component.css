@@ -1,0 +1,78 @@
+.product-details {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Imagen */
+.product-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Nombre */
+.product-details h3 {
+  font-size: 1.8rem;
+  color: #f68b1e;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Descripción */
+.product-details p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* Precio */
+.product-details span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Botones generales */
+.product-details button {
+  padding: 10px 16px;
+  background-color: #f68b1e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.product-details button:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+/* Controles de cantidad */
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.quantity-controls button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%; /* botones redondos para + y - */
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+}

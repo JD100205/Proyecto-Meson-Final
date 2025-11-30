@@ -1,0 +1,54 @@
+<div class="container">
+    <p *ngIf="message" class="message">{{message}}</p>
+    <h1>Detalles de la orden</h1>
+
+    <ng-container *ngIf="orderItem.length; else loading">
+        <div *ngFor="let item of orderItem" class="item-details">
+            <div class="info">
+                <h1>Informacion de la orden</h1>
+                 <p><strong>Id del articulo del pedido: </strong>{{item.id}}</p>
+                 <p><strong>Cantidad: </strong>{{item.quantity}}</p>
+                 <p><strong>Precio total: </strong>{{item.price}}</p>
+                 <p><strong>Estado de la orden: </strong>{{item.status}}</p>
+                 <p><strong>Fecha de la orden: </strong>{{item.createdAt | date}}</p>
+            </div>
+
+            <div class="info">
+                <h1>User Informacion</h1>
+                 <p><strong>Nombre: </strong>{{item.user.name}}</p>
+                 <p><strong>Email: </strong>{{item.user.email}}</p>
+                 <p><strong>Telefono: </strong>{{item.user.phoneNumber}}</p>
+                 <p><strong>Rol: </strong>{{item.user.role}}</p>
+            </div>
+            <div class="info">
+                <h1>Direccion</h1>
+                 <p><strong>Pais: </strong>{{item.user.address?.country}}</p>
+                 <p><strong>Estado: </strong>{{item.user.address?.state}}</p>
+                 <p><strong>Ciudad: </strong>{{item.user.address?.city}}</p>
+                 <p><strong>Calle: </strong>{{item.user.address?.street}}</p>
+                 <p><strong>Codigo postal: </strong>{{item.user.address?.zipCode}}</p>
+            </div>
+            <div class="info">
+                <h1>Informacion del producto</h1>
+                <img [src]="item.product?.imageUrl" [alt]="item.product?.name">
+                 <p><strong>Nombre: </strong>{{item.product?.name}}</p>
+                 <p><strong>Descripcion: </strong>{{item.product?.description}}</p>
+                 <p><strong>Precio: </strong>{{item.product?.price}}</p>
+            </div>
+
+            <div>
+                <h4>Cambio de estado</h4>
+                <select [(ngModel)]="selectedStatus[item.id]">
+                    <option *ngFor="let status of OderStatus" [value]="status">
+                        {{status}}
+                    </option>
+                </select>
+                <button (click)="handleSubmitStatusChange(item.id)">Actualizar estado</button>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-template #loading>
+        <p>Cargando ...</p>
+    </ng-template>
+</div>

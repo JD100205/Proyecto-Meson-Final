@@ -1,0 +1,38 @@
+footer {
+  background-color: #7e7e7e; /* gris oscuro suave */
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 4px solid #f68b1e;
+}
+
+/* Enlaces */
+.footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.footer-links li a {
+  color: #f68b1e;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-links li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Información legal */
+.footer-info {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}

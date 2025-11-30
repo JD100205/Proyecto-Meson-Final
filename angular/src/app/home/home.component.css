@@ -1,0 +1,138 @@
+/* --- Carrusel --- */
+.carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+.carousel-slide {
+  min-width: 100%;
+  display: none;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.45);
+  cursor: pointer;
+}
+.carousel-dots button.active { background: #f4a261; }
+
+/* --- Nosotros con imagen al costado --- */
+.nosotros-layout {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03));
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+.nosotros-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+.nosotros-text h2 {
+  margin: 0 0 12px;
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  color: #f4a261; /* naranja-amarillento */
+  letter-spacing: 1px;
+}
+.nosotros-text p {
+  color: #555454;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* --- Título Productos centrado y color naranja-amarillento --- */
+.productos-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f4a261; /* naranja-amarillento */
+  margin: 36px 0 18px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+/* Opcional: subrayado dorado sutil */
+.productos-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(244,162,97,1), rgba(255,215,0,0.9));
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* --- Mantener estilo del error y espacio extra debajo de productos --- */
+.error {
+  background: #f8d7da;
+  color: #842029;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Asegurar espacio extra debajo de la lista de productos */
+app-productlist {
+  display: block;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+/* Paginación centrada y con separación */
+app-pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .nosotros-layout { grid-template-columns: 1fr; padding: 20px; }
+  .carousel-slide img { height: 300px; }
+  .nosotros-image img { height: 220px; }
+  .hero { height: 400px; }
+}
+

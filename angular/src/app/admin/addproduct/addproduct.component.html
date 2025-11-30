@@ -1,0 +1,25 @@
+<div>
+    <form (submit)="handleSubmit()">
+        <h2>Añadir producto</h2>
+        <p class="message" *ngIf="message">{{message}}</p>
+
+        <input type="file" (change)="handleImage($event)">
+        <select [(ngModel)]="categoryId" name="category" required>
+            <option value="">Selecciona una categoria</option>
+            <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
+        </select>
+
+        <input type="text" placeholder="Nombre del producto" [(ngModel)]="name" name="name" required>
+        <textarea placeholder="Descripcion" [(ngModel)]="description" name="description" required></textarea>
+        <input type="number" placeholder="Precio" [(ngModel)]="price" name="price" required>
+
+        <button type="submit">Se añadio el producto</button>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+

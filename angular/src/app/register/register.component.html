@@ -1,0 +1,23 @@
+<div>
+    <h2>Registrarse</h2>
+    <p class="message" *ngIf="message">{{message}}</p>
+    <form (ngSubmit)="handleSubmit()">
+        <label>Email: </label>
+        <input type="email" name="email" [(ngModel)]="formData.email">
+
+        <label>Nombre: </label>
+        <input type="text" name="name" [(ngModel)]="formData.name">
+
+        <label>Telefono: </label>
+        <input type="text" name="phoneNumber" [(ngModel)]="formData.phoneNumber">
+
+        <label>Contraseña: </label>
+        <input type="password" name="password" [(ngModel)]="formData.password">
+
+        <button type="submit">Registrate</button>
+        <p class="register-link">
+            Ya tienes una cuenta?
+            <a routerLink="/login">Iniciar sesion</a>
+        </p>
+    </form>
+</div>

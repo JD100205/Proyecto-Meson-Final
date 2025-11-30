@@ -1,0 +1,79 @@
+/* Contenedor principal */
+div {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Mensaje */
+p {
+  margin-bottom: 20px;
+  color: #f68b1e;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Título */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f68b1e;
+  font-weight: 700;
+}
+
+/* Input */
+input[type="text"] {
+  width: 100%; /* ocupa todo el ancho disponible */
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fafafa;
+  color: #000;
+  box-sizing: border-box; /* evita que el padding rompa el ancho */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Input inválido */
+input.invalid {
+  border-color: red;
+}
+
+/* Focus elegante */
+input:focus {
+  outline: none;
+  border-color: #f68b1e;
+  box-shadow: 0 0 6px rgba(246,139,30,0.3);
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #f68b1e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover y disabled */
+button:hover:not(:disabled) {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

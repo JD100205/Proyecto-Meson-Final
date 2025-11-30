@@ -1,0 +1,19 @@
+<div class="admin">
+    <p class="error" *ngIf="error">{{error}}</p>
+    <div *ngIf="!error">
+        <h2>Productos</h2>
+        <button (click)="goToAddProduct()">Añade producto</button>
+
+        <ul>
+           <li *ngFor="let product of products">
+  <span>{{product.name}}</span>
+  <div>
+    <button (click)="handleEdit(product.id)">Editar</button>
+    <button class="delete" (click)="handleDelete(product.id)">Eliminar</button>
+  </div>
+</li>
+
+        </ul>
+        <app-pagination [currentPage]="currentPage" [totalPages]="totalPages" (pageChange)="onPageChange($event)" ></app-pagination>
+    </div>
+</div>

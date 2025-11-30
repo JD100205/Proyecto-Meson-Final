@@ -1,0 +1,16 @@
+<div class="admin">
+    <div>
+        <h2>Categorias</h2>
+        <button (click)="addCategoty()">Añade la categoria</button>
+
+        <ul>
+            <li *ngFor="let category of categories">
+                <span>{{category.name}}</span>
+                <div>
+                    <button (click)="handleEdit(category.id)">Editar</button>
+                    <button class="delete" (click)="handleDelete(category.id)">Eliminar</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

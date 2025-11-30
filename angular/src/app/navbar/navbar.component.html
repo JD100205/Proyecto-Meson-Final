@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <div class="nav-left">
+    <a routerLink="/">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.Vajq8eIfq_CdRrunRMZGwQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mesón del Desierto" class="logo">
+    </a>
+  </div>
+
+  <form class="nav-search" (submit)="handleSearchSubmit()">
+    <input type="text" placeholder="Buscar producto..." name="searchValue" [(ngModel)]="searchValue">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <div class="nav-right">
+    <a routerLink="/">Inicio</a>
+    <a routerLink="/categories">Categoría</a>
+    <a *ngIf="isAuthenticated" routerLink="/profile">Cuenta</a>
+    <a *ngIf="isAdmin" routerLink="/admin">Administrador</a>
+    <a *ngIf="!isAuthenticated" routerLink="/login">Login</a>
+    <a *ngIf="isAuthenticated" (click)="handleLogout()">Cerrar sesión</a>
+    <a routerLink="/cart">Carrito</a>
+  </div>
+</nav>

@@ -1,0 +1,40 @@
+.admin {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Título */
+.admin h1 {
+  font-size: 2rem;
+  margin-bottom: 28px;
+  color: #f68b1e;
+  font-weight: 700;
+}
+
+/* Botones */
+.admin button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  background-color: #f68b1e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.admin button:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+

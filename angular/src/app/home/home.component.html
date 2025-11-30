@@ -1,0 +1,40 @@
+<div class="home">
+
+  <!-- Carrusel de fotos -->
+  <section class="carousel" aria-label="Galería de platos">
+    <div class="carousel-track">
+      <div class="carousel-slide active">
+        <img src="https://scontent.flim20-1.fna.fbcdn.net/v/t51.75761-15/478772903_17894334780157681_1137618465313194799_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFO3DLF3nWUCqWSy4HCU6j0fv9eF67AyEl-_14XrsDISTQlSSpQ2NibtFAn8B_aKFPwpUn4OITv-Ds6suP8C9hy&_nc_ohc=SdG83Dr5NVwQ7kNvwEqmxAS&_nc_oc=AdlavUjaWpQ5KF0jJJW95uFC4CnazN5La92Yci8BJSp7TgRETEY6LxMI7VdCp6Xwv7c&_nc_zt=23&_nc_ht=scontent.flim20-1.fna&_nc_gid=EHNM0GQiQ3NXW9LBQAi4jw&oh=00_AfiFFKwQRnmYDKHJEK0pYrnm5oo7jIYqkLxzpfBdn3p23w&oe=692AC27D" alt="meson">
+      </div>
+      
+    </div>
+    
+    <div class="carousel-dots"></div>
+  </section>
+
+  <!-- Sección Nosotros con imagen al costado -->
+  <section class="nosotros-layout">
+    <div class="nosotros-image">
+      <img src="https://scontent.flim2-1.fna.fbcdn.net/v/t39.30808-6/481901390_122117283056717442_1785689784328609579_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEUOjYhRty55kEfHjyLU9SM_FEGor26p-H8UQaivbqn4VnijvbO7p7jzqjncPMSvgS8c958NOhqISm56AraUQaD&_nc_ohc=bmlHiKDD3QoQ7kNvwEEc_fH&_nc_oc=Adk109DuwYiGwFpLX7-UhgyE6HEFAuEcLRsJ5YTjGzxiad_USC5YuLJrHDe3atVvd04&_nc_zt=23&_nc_ht=scontent.flim2-1.fna&_nc_gid=eA3c16lBVu9Z87UCiPHkFQ&oh=00_AfidD8yhK4gxDtKfX44yG3GgP_SMn0AKPHjjWqsmfzp_ug&oe=692AD7F1" alt="Nuestro restaurante">
+    </div>
+    <div class="nosotros-text">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>
+        En <strong>El Mesón del Desierto</strong> celebramos la riqueza gastronómica de Ica con un enfoque contemporáneo.
+        Nuestra cocina fusiona ingredientes locales, técnicas ancestrales y una presentación moderna que cautiva los sentidos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Título Productos centrado y en color naranja-amarillento -->
+  <p class="productos-title">PRODUCTOS</p>
+
+  <!-- Tu bloque Angular intacto (no modificar) -->
+  <p *ngIf="error" class="error">{{error}}</p>
+  <div *ngIf="!error">
+    <app-productlist [products]="products" ></app-productlist>
+    <app-pagination [currentPage]="currentPage" [totalPages]="totalPages" (pageChange)="changePage($event)" ></app-pagination>
+  </div>
+
+</div>
+
