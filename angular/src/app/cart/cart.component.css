@@ -142,3 +142,21 @@ ul {
   background-color: #c1121f;
   transform: translateY(-2px);
 }
+button {
+  padding: 12px 20px;
+  background-color: #f68b1e; /* naranja */
+  color: #fff;              /* texto blanco */
+  border: none;
+  border-radius: 8px;       /* bordes suaves */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover */
+button:hover {
+  background-color: #d97706; /* naranja más oscuro */
+  transform: translateY(-2px);
+}
+

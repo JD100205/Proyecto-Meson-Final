@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class ApiService {
 
   authStatuschanged = new EventEmitter<void>();
-  private static BASE_URL = 'http://localhost:2424';
+  private static BASE_URL = 'https://proyecto-meson-final-production.up.railway.app';
 
 
   constructor(private http: HttpClient) { }
